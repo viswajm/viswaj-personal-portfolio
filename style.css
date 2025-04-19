@@ -55,6 +55,18 @@ a {
   transition: color 0.3s ease;
 }
 
+a:visited {
+  color: #00ff99;
+}
+
+a:hover {
+  color: #00cc88;
+}
+
+a:active {
+  color: #00ff99;
+}
+
 .header {
   background-color: #1a1a1a;
   display: flex;
@@ -117,6 +129,11 @@ a {
   cursor: pointer;
 }
 
+.nav-item a:hover {
+  color: #00ff99;
+}
+
+
 .section {
   background-color: #141414;
   margin: 40px auto;
@@ -150,23 +167,6 @@ a {
 ul {
   list-style-type: square;
   padding-left: 20px;
-}
-
-a {
-  color: #00ff99;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #00ff99;
-}
-
-a:hover {
-  color: #00cc88;
-}
-
-a:active {
-  color: #00ff99;
 }
 
 .cv-link {
@@ -416,7 +416,6 @@ a:active {
   z-index: 10;
 }
 
-/* Update the tools class to accommodate the proficiency bar */
 .tools {
   text-align: center;
   display: flex;
@@ -431,7 +430,6 @@ a:active {
   transform: translateY(-5px);
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   #toolsdiv {
     grid-template-columns: repeat(3, 1fr);
@@ -444,7 +442,7 @@ a:active {
   }
 }
 
-#text-analysis textarea {
+.section textarea {
   width: 100%;
   background-color: #1a1a1a;
   color: #00ff99;
@@ -454,7 +452,7 @@ a:active {
   font-family: monospace;
 }
 
-#text-analysis button {
+.section button {
   margin-top: 10px;
   padding: 10px 20px;
   font-weight: bold;
